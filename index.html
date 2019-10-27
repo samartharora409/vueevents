@@ -12,11 +12,14 @@
     <div id="app">
         <h1>Age</h1>
         <p>{{Age}}</p>
-        <button name="Add" v-on:click="addAge">Add</button>
-        <button name="Sub" v-on:click="subAge">Subtract</button>
+        <button name="Add" v-on:click="addAge(1)">Add</button>
+        <button name="Sub" v-on:click="subAge(1)">Subtract</button>
+        <button name="Add 10" v-on:click.once="addAge(10)">Add 10</button>
+        <button name="Sub" v-on:click.once="subAge(10)">Subtract 10</button>
         <dev id="canvas" v-on:mousemove="updateXY">
             {{upx}},{{upy}}
         </dev>
+        <a v-on:click.prevent="print1" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external">The link</a>
     </div>
 
 

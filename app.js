@@ -10,17 +10,23 @@ new Vue ({
 
     },
     methods: {
-        addAge: function(){
-            this.Age++
+        addAge: function(x){
+            this.Age=this.Age+x;
         },
-        subAge: function(){
-            this.Age--
+        subAge: function(x){
+            this.Age=this.Age-x;
         },
         updateXY: function(event){
             this.upx=event.offsetX;
             this.upy=event.offsetY;
 
+        },
+
+
+        print1:function(){
+            alert('click me');
         }
+
 
     }
 
